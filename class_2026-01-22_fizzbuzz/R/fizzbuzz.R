@@ -30,3 +30,12 @@ hello = function(x) {
   print(c("Hello,", x,"!"))
 }
 
+
+
+print_summary = function(data) {
+  cat("Data summary:\n")
+  cat("Rows:", nrow(data), "\n")
+  cat("Columns:", ncol(data), "\n")
+  cat("Column names:", paste(names(data), collapse = ", "), "\n")
+  cat("...\n")
+}
